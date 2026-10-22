@@ -117,92 +117,82 @@ window.GLODE_DA_DOVE = [
   ]
  },
  {
-  "id": "amati",
-  "titolo": "Home · I più amati",
-  "sotto": "I quattro prodotti in evidenza",
-  "img": "sito-home-piu-amati.webp",
-  "w": 1440,
-  "h": 726,
+  "id": "home",
+  "titolo": "Home",
+  "sotto": "La pagina iniziale, dall’alto in basso",
+  "img": "sito-home-intera.webp",
+  "w": 1120,
+  "h": 5052,
   "punti": [
    {
-    "x": 36,
-    "y": 25,
+    "x": 24,
+    "y": 15.5,
     "t": "Titolo «I più amati»",
     "d": "la collezione manuale «I più amati», nel suo ordine",
     "c": "cambiare-piu-amati"
    },
    {
-    "x": 8,
-    "y": 38,
+    "x": 5,
+    "y": 17,
     "t": "Numero sulla foto",
     "d": "campo «Numero di linea»",
     "c": "campi-uno-per-uno"
    },
    {
-    "x": 17,
-    "y": 60,
+    "x": 16.7,
+    "y": 19.3,
     "t": "Foto del prodotto",
     "d": "il packshot in «Contenuti multimediali»",
     "c": "cambiare-prezzo-foto"
    },
    {
     "x": 4,
-    "y": 86,
-    "t": "Nome",
-    "d": "«Titolo» del prodotto",
+    "y": 22.4,
+    "t": "Nome e «Creme · 50 ml»",
+    "d": "«Titolo», «Tipo» e il valore di «Formato»",
     "c": "creare-prodotto"
    },
    {
-    "x": 24,
-    "y": 80,
+    "x": 27.5,
+    "y": 21,
     "t": "Prezzo",
     "d": "«Prezzo» della prima variante",
     "c": "cambiare-prezzo-foto"
    },
    {
-    "x": 4,
-    "y": 93,
-    "t": "«Creme · 50 ml»",
-    "d": "«Tipo» e il valore di «Formato»",
-    "c": "creare-prodotto"
-   }
-  ]
- },
- {
-  "id": "linea",
-  "titolo": "Home · Tutta la linea",
-  "sotto": "Tutti i prodotti pubblicati",
-  "img": "sito-home-la-linea.webp",
-  "w": 1440,
-  "h": 1130,
-  "punti": [
-   {
-    "x": 29,
-    "y": 16,
+    "x": 27,
+    "y": 38.7,
     "t": "Titolo «Tutta la linea»",
     "d": "tutti i prodotti pubblicati, in ordine di «Numero di linea»",
     "c": "pubblicare-prodotto"
    },
    {
-    "x": 8,
-    "y": 24,
-    "t": "Numero sulla foto",
-    "d": "campo «Numero di linea»: decide il posto",
-    "c": "campi-uno-per-uno"
-   },
-   {
     "x": 72,
-    "y": 15,
+    "y": 38.5,
     "t": "«Filtra per esigenza»",
     "d": "campo «Esigenze» dei prodotti",
     "c": "esigenze-tipi-pelle"
    },
    {
-    "x": 82,
-    "y": 37,
+    "x": 30,
+    "y": 63.4,
     "t": "Un prodotto nuovo",
-    "d": "compare da solo quando è pubblicato e ha una foto",
+    "d": "compare da solo al posto del suo numero, quando è pubblicato e ha una foto",
     "c": "pubblicare-prodotto"
+   },
+   {
+    "x": 77,
+    "y": 84.3,
+    "t": "«Scopri le idee regalo»",
+    "d": "la collezione manuale «Idee regalo»",
+    "c": "collezioni"
+   },
+   {
+    "x": 54,
+    "y": 91,
+    "t": "Recensioni in home",
+    "d": "prese dalle recensioni dei prodotti, nell’ordine della linea",
+    "c": "aggiungere-recensione"
    }
   ]
  },
