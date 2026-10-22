@@ -1,0 +1,191 @@
+/* guida.css — Guida al pannello Glodé v2 (22/10/2026).
+   Font ospitati in ../fonts (percorsi relativi al CSS, non alla pagina: funzionano da file e sotto un sottopercorso).
+   Le bozze erano mockup fissi a 1280 px: qui il contenitore è fluido (max 1200) e a 360 px tutto va in colonna. */
+@font-face{font-family:Mulish;font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/mulish-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Mulish;font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/mulish-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Mulish;font-style:normal;font-weight:800;font-display:swap;src:url(../fonts/mulish-latin-800-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Mulish;font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/mulish-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Mulish;font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/mulish-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Mulish;font-style:normal;font-weight:800;font-display:swap;src:url(../fonts/mulish-latin-ext-800-normal.woff2) format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+:root{
+  --navy:#202944;--prugna:#6C345F;--prugna-scuro:#55284B;--lavanda:#F4EDF2;--perla:#EFECEE;
+  --bianco-caldo:#FAF8F9;--antracite:#2B2630;--grigio:#6B6570;--nebbia:#B9BDD1;--rosso:#B3261E;
+  --gutter:16px;
+}
+@media (min-width:700px){:root{--gutter:40px}}
+@media (min-width:1100px){:root{--gutter:64px}}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bianco-caldo);color:var(--antracite);font-family:Mulish,system-ui,sans-serif;font-size:16px;line-height:1.5}
+img{max-width:100%}
+a{color:var(--prugna)}a:hover{color:var(--prugna-scuro)}
+:focus-visible{outline:3px solid var(--prugna);outline-offset:2px;border-radius:4px}
+.hero :focus-visible,.tessera.navy :focus-visible,.tessera.prugna :focus-visible{outline-color:#fff}
+.solo-lettori{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.contenitore{width:100%;max-width:1200px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+
+/* testata */
+.testata{background:#fff;border-bottom:1px solid var(--perla)}
+.testata .contenitore{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 28px;padding-top:18px;padding-bottom:18px}
+.marchio{display:flex;align-items:baseline;gap:14px;text-decoration:none}
+.logo{font-family:Georgia,'Times New Roman',serif;font-size:30px;color:var(--navy)}
+.marchio-nome{font-size:13px;font-weight:800;letter-spacing:3px;color:var(--prugna)}
+.menu-aree{display:flex;flex-wrap:wrap;gap:6px 24px;font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.menu-aree a{color:var(--navy);text-decoration:none;padding:6px 0}
+.menu-aree a:hover,.menu-aree a[aria-current]{color:var(--prugna);text-decoration:underline;text-underline-offset:6px}
+
+/* home: testata blu con ricerca (variante A) */
+.hero{background:var(--navy);color:#fff;padding:48px 0 56px}
+.hero .contenitore{display:flex;flex-direction:column;align-items:center;gap:22px}
+.hero h1{margin:0;font-size:clamp(28px,5vw,40px);font-weight:800;letter-spacing:1px;text-align:center;line-height:1.15}
+.ricerca{display:flex;align-items:center;gap:12px;width:100%;max-width:720px;background:#fff;border-radius:999px;padding:6px 6px 6px 22px}
+.ricerca svg{flex:none}
+.ricerca input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:17px;color:var(--antracite);background:transparent}
+.ricerca:focus-within{outline:3px solid #fff;outline-offset:3px}
+.ricerca button{border:0;background:var(--prugna);color:#fff;font:inherit;font-weight:800;font-size:14px;letter-spacing:1px;padding:14px 24px;border-radius:999px;cursor:pointer}
+.ricerca button:hover{background:var(--prugna-scuro)}
+.risultati{width:100%;max-width:720px;background:#fff;color:var(--antracite);border-radius:16px;padding:8px;display:flex;flex-direction:column}
+.risultati[hidden]{display:none}
+.risultati a.risultato{display:flex;flex-direction:column;gap:2px;padding:12px 16px;border-radius:10px;text-decoration:none;color:var(--navy)}
+.risultati a.risultato:hover{background:var(--lavanda)}
+.risultato b{font-size:17px}.risultato span{font-size:14px;color:var(--grigio)}
+.risultati .nessuno{margin:0;padding:12px 16px;color:var(--grigio)}
+.piu-cercati{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin:0;font-size:14px}
+.piu-cercati .etichetta{color:var(--nebbia)}
+.piu-cercati a{color:#fff}
+
+/* home: i quattro riquadri (variante B) */
+.aree{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;padding-top:40px;padding-bottom:16px}
+.tessera{display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:200px;padding:26px;border-radius:20px;text-decoration:none}
+@media (min-width:700px){.tessera{min-height:250px}}
+.tessera svg{width:40px;height:40px;fill:none;stroke:currentColor;stroke-width:1.6}
+.tessera b{display:block;font-size:24px;line-height:1.2;margin-bottom:6px}
+.tessera span{font-size:15px}
+.tessera.navy{background:var(--navy);color:#fff}.tessera.navy span{color:var(--nebbia)}
+.tessera.prugna{background:var(--prugna);color:#fff}.tessera.prugna span{color:var(--lavanda)}
+.tessera.lavanda{background:var(--lavanda);color:var(--navy)}.tessera.lavanda span{color:var(--prugna-scuro)}
+.tessera.perla{background:var(--perla);color:var(--navy)}.tessera.perla span{color:var(--grigio)}
+.tessera:hover{filter:brightness(1.06)}
+
+.colonna-area{display:flex;flex-direction:column;gap:20px;min-width:0;scroll-margin-top:16px}
+.blocco-area{background:#fff;border:1px solid var(--perla);border-radius:16px;padding:18px 22px;display:flex;flex-direction:column;gap:10px}
+.blocco-area a{color:var(--navy);font-weight:700;text-decoration:none}
+.blocco-area a:hover{text-decoration:underline}
+
+/* «Da dove viene?»: la scheda intera a sinistra (stretta, si scorre con la pagina), la legenda a destra */
+.da-dove-corpo{display:grid;grid-template-columns:minmax(0,520px) minmax(0,1fr);gap:40px;align-items:start}
+.legenda{position:sticky;top:16px;margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.legenda a{display:flex;gap:12px;align-items:center;padding:10px 14px;background:#fff;border:1px solid var(--perla);border-radius:12px;color:var(--navy);text-decoration:none}
+.legenda a:hover{background:var(--lavanda)}
+.legenda .n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--prugna);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
+.legenda b{display:block}.legenda span.dove{display:block;font-size:14px;color:var(--grigio)}
+@media (max-width:800px){.da-dove-corpo{grid-template-columns:minmax(0,1fr)}.legenda{position:static}}
+
+.da-dove{padding-top:40px;padding-bottom:56px;display:flex;flex-direction:column;gap:20px}
+.da-dove .intro .sopra{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--prugna);text-transform:uppercase}
+.da-dove h2{margin:6px 0 8px;font-size:clamp(22px,3.4vw,28px);font-weight:800;color:var(--navy)}
+.da-dove p{margin:0;color:var(--grigio)}
+
+/* screenshot annotati: i segni sono in percentuale sopra l'immagine, quindi scalano con lei */
+/* La figura si stringe sull'immagine (mai più larga del suo scatto: niente ingrandimenti sfocati) e i segni,
+   in percentuale della figura, restano in percentuale dell'immagine. width/height nell'HTML tengono il posto. */
+.scatto{position:relative;margin:0;border-radius:12px;background:var(--perla);overflow:visible;width:fit-content;max-width:100%;border:1px solid var(--perla)}
+.scatto img{display:block;width:auto;max-width:100%;height:auto;border-radius:11px}
+/* Il segnaposto si dichiara con un'etichetta DENTRO l'immagine: un figcaption allungherebbe la figura e le percentuali
+   dei segni (relative alla figura) non cadrebbero più sull'immagine. */
+.scatto.segnaposto::after{content:"Segnaposto: screenshot da scattare";position:absolute;left:10px;top:8px;font-size:12px;font-weight:700;color:var(--grigio);background:rgba(255,255,255,.85);padding:3px 8px;border-radius:6px;pointer-events:none}
+.segno{position:absolute}
+.segno.numero{width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;background:var(--prugna);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;text-decoration:none;box-shadow:0 0 0 3px #fff}
+a.segno.numero:hover{background:var(--prugna-scuro);color:#fff}
+.segno.riquadro{border:3px solid var(--prugna);border-radius:10px}
+.segno.no{border:3px dashed var(--rosso);border-radius:12px;display:flex;justify-content:flex-end;align-items:flex-start;padding:6px;color:#fff;font-size:13px;font-weight:700;line-height:1}
+.segno.no>b{background:var(--rosso);padding:7px 10px;border-radius:8px;white-space:nowrap;font-weight:700}
+@media (max-width:520px){
+  .segno.numero{width:26px;height:26px;margin:-13px 0 0 -13px;font-size:13px;box-shadow:0 0 0 2px #fff}
+  .segno.riquadro{border-width:2px;border-radius:6px}
+  .segno.no{border-width:2px}
+  .segno.no{padding:4px;font-size:11px}.segno.no>b{padding:5px 7px}
+}
+
+/* pagina di un compito (variante A) */
+.compito{display:grid;grid-template-columns:240px minmax(0,1fr);gap:48px;padding-top:40px;padding-bottom:56px}
+.menu-compiti{display:flex;flex-direction:column;gap:6px;font-size:14px;align-self:start}
+.menu-compiti .sopra{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--prugna);text-transform:uppercase;margin-bottom:4px}
+.menu-compiti a{color:var(--navy);padding:8px 12px;border-radius:8px;text-decoration:none}
+.menu-compiti a:hover{background:var(--lavanda)}
+.menu-compiti a[aria-current]{background:var(--prugna);color:#fff;font-weight:700}
+.compito article{display:flex;flex-direction:column;gap:28px;min-width:0}
+.briciole{font-size:13px;color:var(--grigio)}
+.briciole a{color:var(--grigio)}
+.compito h1{margin:6px 0 10px;font-size:clamp(26px,4vw,34px);font-weight:800;color:var(--navy);line-height:1.15}
+.pillole{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none;font-size:13px;font-weight:700}
+.pillole li{background:var(--lavanda);color:var(--prugna-scuro);padding:6px 12px;border-radius:999px}
+.passi{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:28px;counter-reset:passo}
+.passo{display:flex;gap:16px;align-items:flex-start;counter-increment:passo}
+.passo::before{content:counter(passo);flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
+.passo-corpo{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px}
+.azione{margin:6px 0 0;font-size:clamp(16px,2.4vw,18px);font-weight:700}
+details{background:#fff;border:1px solid var(--perla);border-radius:10px;padding:12px 16px;font-size:15px}
+summary{font-weight:700;color:var(--prugna);cursor:pointer}
+details p{margin:10px 0 0}
+.sul-sito{background:var(--lavanda);border-radius:14px;padding:20px 24px;display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:24px;align-items:center}
+.sul-sito .scatto{background:#fff}
+.sul-sito h2{margin:0 0 6px;font-size:12px;font-weight:800;letter-spacing:2px;color:var(--prugna);text-transform:uppercase}
+.sul-sito p{margin:0}
+
+@media (max-width:800px){
+  .compito{grid-template-columns:minmax(0,1fr);gap:24px;padding-top:24px}
+  .menu-compiti{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .menu-compiti .sopra{flex-basis:100%}
+  .menu-compiti a{background:#fff;border:1px solid var(--perla)}
+  .sul-sito{grid-template-columns:minmax(0,1fr);padding:18px}
+}
+@media (max-width:520px){
+  .logo{font-size:26px}.marchio-nome{letter-spacing:2px}
+  .hero{padding:32px 0 40px}
+  .ricerca{padding-left:16px}.ricerca button{padding:12px 16px}
+  .passo{gap:12px}
+}
+
+/* 22/10/2026: «Da dove viene?» ha una pagina sua (da-dove-viene.html); in home resta un invito. */
+.cta-da-dove{padding-top:40px;padding-bottom:56px}
+.cta-card{display:flex;align-items:center;gap:28px;background:var(--lavanda);border-radius:20px;padding:20px 28px 20px 20px;text-decoration:none;color:var(--navy)}
+.cta-card img{width:220px;max-width:40%;height:auto;border-radius:12px;flex-shrink:0}
+.cta-testo{display:flex;flex-direction:column;gap:6px}
+.cta-testo .sopra{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--prugna);text-transform:uppercase}
+.cta-testo b{font-size:clamp(20px,3vw,26px);line-height:1.2}
+.cta-azione{font-weight:700;color:var(--prugna)}
+.cta-card:hover .cta-azione{text-decoration:underline}
+@media (max-width:600px){.cta-card{flex-direction:column;align-items:flex-start;padding:16px}.cta-card img{max-width:100%;width:100%}}
+.briciole-pagina{padding-top:24px}
+.briciole-pagina a{font-weight:700;text-decoration:none}
+/* la freccia non va mai a capo da sola: resta attaccata all'ultima parola */
+.non-spezzare{white-space:nowrap}
+.blocco-area a{text-wrap:pretty}
+
+/* «Da dove viene?» a tre colonne (22/10/2026): pagine del sito | screenshot scelto | voci della pagina */
+.contenitore-largo{max-width:1440px;margin:0 auto;padding:0 24px;box-sizing:border-box}
+.dd-testa{padding-top:24px;padding-bottom:20px}
+.dd-indietro{font-weight:700;text-decoration:none}
+.dd-testa h1{margin:14px 0 6px;font-size:clamp(26px,4vw,36px);font-weight:800;color:var(--navy)}
+.dd-testa p{margin:0;color:var(--grigio)}
+.dd-corpo{display:grid;grid-template-columns:230px minmax(0,1fr) 300px;gap:28px;align-items:start;padding-bottom:56px}
+.dd-pagine{position:sticky;top:16px;display:flex;flex-direction:column;gap:10px}
+.dd-pagine a{display:flex;flex-direction:column;gap:6px;padding:8px;border:2px solid transparent;border-radius:14px;background:#fff;text-decoration:none;color:var(--navy)}
+.dd-pagine a:hover{border-color:var(--perla)}
+.dd-pagine a.scelta{border-color:var(--prugna);background:var(--lavanda)}
+.dd-pagine img{width:100%;height:84px;object-fit:cover;object-position:top;border-radius:8px;background:var(--perla)}
+.dd-pagine b{display:block;font-size:14px}.dd-pagine span span{display:block;font-size:12px;color:var(--grigio)}
+.dd-centro .scatto{margin:0}
+.dd-voci{position:sticky;top:16px}
+.dd-voci h2{margin:0 0 4px;font-size:20px;font-weight:800;color:var(--navy)}
+.dd-voci p{margin:0 0 12px;color:var(--grigio);font-size:14px}
+.dd-voci ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;max-height:calc(100vh - 140px);overflow:auto}
+.dd-voci ol a{display:flex;gap:12px;align-items:center;padding:10px 12px;background:#fff;border:1px solid var(--perla);border-radius:12px;color:var(--navy);text-decoration:none}
+.dd-voci ol a:hover,.dd-voci ol a.acceso{background:var(--lavanda);border-color:var(--prugna)}
+.dd-voci .n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--prugna);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
+.dd-voci b{display:block;font-size:15px}.dd-voci span.dove{display:block;font-size:13px;color:var(--grigio)}
+.segno.numero.acceso{transform:scale(1.25);box-shadow:0 0 0 4px rgba(108,52,95,.35)}
+@media (max-width:1100px){.dd-corpo{grid-template-columns:200px minmax(0,1fr)}.dd-voci{grid-column:1/-1;position:static}.dd-voci ol{max-height:none}}
+@media (max-width:700px){.dd-corpo{grid-template-columns:minmax(0,1fr)}.dd-pagine{position:static;flex-direction:row;overflow-x:auto;padding-bottom:6px}.dd-pagine a{flex:0 0 150px}}

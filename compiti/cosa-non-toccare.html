@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cosa non toccare · Guida al pannello Glodé</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../assets/guida.css">
+</head>
+<body data-radice="../" data-compito="cosa-non-toccare">
+  <header class="testata">
+    <div class="contenitore">
+      <a class="marchio" href="../index.html"><span class="logo">Glodé</span><span class="marchio-nome">GUIDA AL PANNELLO</span></a>
+      <nav class="menu-aree" aria-label="Aree della guida">
+        <a href="../index.html#area-prodotti">Prodotti</a>
+        <a href="../index.html#area-campi">Campi e voci</a>
+        <a href="../index.html#area-collezioni">Collezioni e centri</a>
+        <a href="../index.html#area-aiuto">Aiuto</a>
+      </nav>
+    </div>
+  </header>
+  <main class="contenitore compito">
+    <nav class="menu-compiti" id="menu-compiti" aria-label="Compiti di quest'area"></nav>
+    <article>
+      <div>
+        <div class="briciole"><a href="../index.html#area-aiuto">Attenzione e aiuto</a> ›</div>
+        <h1>Cosa non toccare</h1>
+        <ul class="pillole">
+          <li>Da leggere una volta</li>
+          <li>Se serve, scriveteci</li>
+        </ul>
+        <p>Queste parti del pannello possono rompere il sito senza dare errori, oppure le gestisce l’agenzia.</p>
+      </div>
+        <ol class="passi">
+          <li class="passo">
+            <div class="passo-corpo">
+              <p class="azione">Non cliccate «Aggiungi definizione» nel riquadro dei campi.</p>
+              <figure class="scatto" data-scatto="admin-hydra-metafield.png">
+                <img src="../img/admin-hydra-metafield.webp" width="775" height="755" alt="Il riquadro «Metafield del prodotto» di Hydra Boost Serum, con «Aggiungi definizione» in alto a destra">
+                  <span class="segno no" style="left:80.6%;top:0.4%;width:18.4%;height:4.2%"><b>Non qui</b></span>
+                  <span class="segno numero" style="left:70%;top:5.2%">1</span>
+              </figure>
+              <details>
+                <summary>Perché?</summary>
+                <p>Crea un campo nuovo per tutti i prodotti, che il sito comunque non legge. Allo stesso modo, nelle impostazioni dei campi non rinominate, non spostate e non cancellate i campi Glodé: il sito li cerca con quel nome.</p>
+              </details>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-corpo">
+              <p class="azione">Nei campi a elenco non cliccate il ⊗ che compare a destra della riga: svuota tutto il campo.</p>
+              <figure class="scatto" data-scatto="admin-voce-menu.png">
+                <img src="../img/admin-voce-menu.webp" width="770" height="480" alt="Il campo «Attivi del prodotto» con il menu di una voce aperto; a destra della riga il ⊗ che toglie tutte le voci del campo">
+                  <span class="segno no" style="left:93.5%;top:0.5%;width:4.6%;height:7.5%"><b>Non qui</b></span>
+                  <span class="segno riquadro" style="left:31.6%;top:91.3%;width:31.2%;height:6.3%"></span>
+                  <span class="segno numero" style="left:88%;top:10%">2</span>
+              </figure>
+              <details>
+                <summary>E se l’ho premuto?</summary>
+                <p>Il campo si svuota. Non salvate: uscite dalla pagina senza salvare e confermate di non tenere le modifiche; le voci restano. Per togliere una voce sola si clicca la voce e si sceglie «Cancella» in fondo al suo menu (nel riquadro).</p>
+              </details>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-corpo">
+              <p class="azione">Nel menu di una voce o nella finestra del <b>+</b> non cliccate i nomi dell’elenco.</p>
+              <figure class="scatto" data-scatto="admin-finestra-voci-recensioni.png">
+                <img src="../img/admin-finestra-voci-recensioni.webp" width="770" height="440" alt="La finestra del + di «Recensioni del prodotto»: l’elenco contiene le recensioni di tutti i prodotti">
+                  <span class="segno no" style="left:61.4%;top:10.5%;width:31%;height:72.5%"><b>Non qui</b></span>
+                  <span class="segno riquadro" style="left:61.4%;top:84.5%;width:31%;height:7%"></span>
+                  <span class="segno numero" style="left:55%;top:50%">3</span>
+              </figure>
+              <details>
+                <summary>Perché?</summary>
+                <p>L’elenco contiene le voci di tutti i prodotti. Nel menu di una voce, un nome cliccato <b>sostituisce</b> la voce aperta; nella finestra del +, collega al prodotto una voce che appartiene a un altro. Per una voce nuova si usa sempre «Aggiungi voce», in fondo (nel riquadro).</p>
+              </details>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-corpo">
+              <p class="azione">Lasciate vuoti i campi sotto «Senza Pin» che il sito non usa.</p>
+              <figure class="scatto" data-scatto="admin-hydra-senza-pin.png">
+                <img src="../img/admin-hydra-senza-pin.webp" width="970" height="330" alt="La pagina «Metafield prodotto» (da «Visualizza tutti»): sotto «Senza Pin» Google: Custom Product, Prodotti complementari, Impostazioni dei prodotti correlati, Prodotti correlati, Boost dei prodotti per la ricerca">
+                  <span class="segno no" style="left:1%;top:25%;width:97%;height:72%"><b>Non qui</b></span>
+                  <span class="segno numero" style="left:50%;top:18%">4</span>
+              </figure>
+              <details>
+                <summary>Quali sono?</summary>
+                <p>Sono campi di app di Shopify: «Prodotti complementari», «Impostazioni dei prodotti correlati», «Prodotti correlati», «Boost dei prodotti per la ricerca» e «Google: Custom Product». Sul sito non si vedono: per «Completa il rituale» si usa il «Prodotti correlati» fra i 14, sopra.</p>
+              </details>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-corpo">
+              <p class="azione">In «Negozio online» non cliccate «Modifica tema»; nel menu «⋯» del tema usate solo «Visualizza».</p>
+              <figure class="scatto" data-scatto="admin-temi.png">
+                <img src="../img/admin-temi.webp" width="1440" height="560" alt="«Negozio online»: il tema pubblicato in grande, con «Modifica tema» e il menu «⋯» aperto: Duplica in Canvas, Visualizza, Rinomina, Duplica, Modifica codice, Modifica contenuto predefinito del tema, Scarica file del tema">
+                  <span class="segno riquadro" style="left:1%;top:50%;width:13.3%;height:4.6%"></span>
+                  <span class="segno riquadro" style="left:74.3%;top:37.5%;width:14.5%;height:4.6%"></span>
+                  <span class="segno no" style="left:73.6%;top:57.5%;width:15.2%;height:5.2%"><b>Non qui</b></span>
+                  <span class="segno no" style="left:79%;top:87.6%;width:7.6%;height:5.4%"><b>Non qui</b></span>
+                  <span class="segno numero" style="left:70%;top:40%">5</span>
+              </figure>
+              <details>
+                <summary>Perché?</summary>
+                <p>«Modifica tema» e «Modifica codice» cambiano il sito di tutti, subito: ci sono impostazioni tecniche (per esempio la galleria della scheda) che rovinano le foto di tutti i prodotti, e una modifica fatta lì può essere cancellata dal prossimo aggiornamento dell’agenzia. Anche i testi di pagine come «Chi siamo» e «FAQ» stanno nel tema: scriveteci.</p>
+                <p>Del menu «⋯» non usate neanche «Rinomina», «Duplica» e gli altri comandi: «Visualizza» basta per guardare.</p>
+              </details>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-corpo">
+              <p class="azione">Più in basso, in «Temi in bozza», non cliccate mai «Pubblica».</p>
+              <figure class="scatto" data-scatto="admin-temi-bozza.png">
+                <img src="../img/admin-temi-bozza.webp" width="970" height="530" alt="La sezione «Temi in bozza»: quattro copie del tema con nomi tecnici, ognuna con «Pubblica», «Modifica tema» e «⋯»">
+                  <span class="segno no" style="left:71.5%;top:16%;width:23.5%;height:70%"><b>Non qui</b></span>
+                  <span class="segno numero" style="left:66%;top:12%">6</span>
+              </figure>
+              <details>
+                <summary>Perché ci sono tante copie?</summary>
+                <p>Sono le versioni preparate dall’agenzia: alcune sono la via di ritorno in caso di problemi. «Pubblica» sostituirebbe il sito di oggi con una di queste, subito. Non cancellatene nessuna.</p>
+              </details>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-corpo">
+              <p class="azione">Non cambiate le condizioni delle collezioni automatiche.</p>
+              <figure class="scatto" data-scatto="admin-collezione-sieri.png">
+                <img src="../img/admin-collezione-sieri.webp" width="1210" height="670" alt="La collezione automatica «Sieri» in admin: a destra le condizioni che la riempiono">
+                  <span class="segno no" style="left:70.5%;top:10.5%;width:23.5%;height:33.5%"><b>Non qui</b></span>
+                  <span class="segno numero" style="left:67.5%;top:30%">7</span>
+              </figure>
+              <details>
+                <summary>Dove lo spiega?</summary>
+                <p>In <a href="collezioni.html">Collezioni automatiche e manuali</a>.</p>
+              </details>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-corpo">
+              <p class="azione">In «Contenuto» → «Menu» → «Main menu» non rinominate e non spostate le «Voci di menu».</p>
+              <figure class="scatto" data-scatto="admin-navigazione.png">
+                <img src="../img/admin-navigazione.webp" width="800" height="585" alt="Il menu «Main menu» in admin: le «Voci di menu» Prodotti, Esigenze, Idee regalo e kit, Scopri il tuo codice, Metodo &amp; Filosofia, ciascuna con la maniglia per trascinarla">
+                  <span class="segno no" style="left:3%;top:45.6%;width:94%;height:42%"><b>Non qui</b></span>
+                  <span class="segno numero" style="left:50%;top:41%">8</span>
+              </figure>
+              <details>
+                <summary>Perché?</summary>
+                <p>Le voci sotto «Prodotti» devono restare identiche al «Tipo» dei prodotti, e ogni voce deve restare un collegamento alla sua collezione: rinominarla, o puntarla a una pagina, svuota la sua tendina. Le voci nuove chiedetele all’agenzia.</p>
+              </details>
+              <details>
+                <summary>Altro da non toccare?</summary>
+                <p>I flussi automatici di Flow e i tag «centro:…» sugli ordini (servono al conteggio per centro); le app: non installatene senza parlarne con l’agenzia.</p>
+              </details>
+            </div>
+          </li>
+        </ol>
+      <section class="sul-sito" aria-labelledby="sul-sito-titolo">
+        <figure class="scatto" data-scatto="sito-hydra-alto.png">
+          <img src="../img/sito-hydra-alto.webp" width="1440" height="1253" alt="La scheda di Hydra Boost Serum su glode-lab.it: la galleria con lo scatto ambientato">
+            <span class="segno riquadro" style="left:12.6%;top:3.4%;width:43.4%;height:62.4%"></span>
+        </figure>
+        <div>
+          <h2 id="sul-sito-titolo">Sul sito</h2>
+          <p>Un’impostazione del tema cambia la galleria di tutti i prodotti insieme: per questo il tema lo gestisce l’agenzia. Se qualcosa non vi piace, scriveteci.</p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/compiti.js"></script>
+  <script src="../assets/guida.js"></script>
+</body>
+</html>

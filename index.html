@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guida al pannello Glodé</title>
+<meta name="description" content="Come si fa, passo per passo, ogni cosa nel pannello di Shopify del negozio Glodé.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/guida.css">
+</head>
+<body data-radice="">
+  <header class="testata">
+    <div class="contenitore">
+      <a class="marchio" href="index.html"><span class="logo">Glodé</span><span class="marchio-nome">GUIDA AL PANNELLO</span></a>
+      <nav class="menu-aree" aria-label="Aree della guida">
+        <a href="index.html#area-prodotti">Prodotti</a>
+        <a href="index.html#area-campi">Campi e voci</a>
+        <a href="index.html#area-collezioni">Collezioni e centri</a>
+        <a href="index.html#area-aiuto">Aiuto</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="contenitore">
+        <h1>Cosa dovete fare oggi?</h1>
+        <form class="ricerca" id="form-cerca" role="search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6B6570" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+          <label class="solo-lettori" for="cerca">Cercate un compito</label>
+          <input id="cerca" type="search" autocomplete="off" placeholder="Es. aggiungere una recensione, cambiare un prezzo…">
+          <button type="submit">CERCA</button>
+        </form>
+        <div class="risultati" id="risultati" aria-live="polite" hidden></div>
+        <p class="piu-cercati"><span class="etichetta">I più cercati:</span><span id="piu-cercati" style="display:contents"></span></p>
+      </div>
+    </section>
+
+    <section class="aree contenitore" id="aree" aria-label="Le aree della guida"></section>
+
+    <section class="cta-da-dove contenitore" id="da-dove">
+      <a class="cta-card" href="da-dove-viene.html">
+        <img src="img/sito-hydra-anteprima.webp" width="640" height="397" alt="" aria-hidden="true">
+        <span class="cta-testo">
+          <span class="sopra">Da dove viene?</span>
+          <b>Vedete qualcosa sul sito e non sapete dove si cambia?</b>
+          <span class="cta-azione">Aprite la scheda prodotto spiegata pezzo per pezzo →</span>
+        </span>
+      </a>
+    </section>
+  </main>
+  <script src="assets/compiti.js"></script>
+  <script src="assets/guida.js"></script>
+</body>
+</html>
