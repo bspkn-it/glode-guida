@@ -5,7 +5,7 @@
 window.GLODE_AREE = {
   prodotti: {
     titolo: 'Prodotti', classe: 'navy',
-    descrizione: 'Creare, cambiare prezzo e foto, la Mini, togliere dal sito',
+    descrizione: 'Creare, prezzo e foto, la Mini, togliere dal sito, sconti, gift card',
     icona: '<rect x="5" y="3" width="14" height="18" rx="3"/><path d="M9 3v3h6V3"/>'
   },
   campi: {
@@ -18,9 +18,14 @@ window.GLODE_AREE = {
     descrizione: 'I più amati, collezioni, «Dove trovi Glodé»',
     icona: '<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>'
   },
+  sito: {
+    titolo: 'Menu, testi e negozio', classe: 'bianco',
+    descrizione: 'Menu, barra in alto, piede pagina, informative, Google, newsletter',
+    icona: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 14h10"/>'
+  },
   aiuto: {
     titolo: 'Attenzione e aiuto', classe: 'perla',
-    descrizione: 'Cosa non toccare, segnalarci un problema, domande frequenti',
+    descrizione: 'Cosa non toccare, cosa è fisso nel codice, segnalarci un problema, domande',
     icona: '<path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/>'
   }
 };
@@ -47,6 +52,18 @@ window.GLODE_COMPITI = [
     descrizione: 'Bozza o archivio, senza eliminare niente.',
     parole: ['togliere', 'nascondere', 'rimuovere', 'eliminare', 'cancellare', 'archiviare', 'archiviato', 'bozza', 'sospendere', 'pausa', 'esaurito', 'ritirare'],
     pagina: 'compiti/togliere-prodotto.html', minuti: 2 },
+  { id: 'prodotto-esaurito', area: 'prodotti', titolo: 'Segnare un prodotto esaurito (e rimetterlo)',
+    descrizione: 'Scorte non monitorate, la Bozza finché torna, e di nuovo Attivo.',
+    parole: ['esaurito', 'finito', 'terminato', 'scorte', 'magazzino', 'quantita', 'disponibile', 'disponibilita', 'non disponibile', 'inventario', 'giacenza', 'rimettere', 'tornato'],
+    pagina: 'compiti/prodotto-esaurito.html', minuti: 2 },
+  { id: 'creare-codice-sconto', area: 'prodotti', titolo: 'Creare un codice sconto',
+    descrizione: 'Percentuale, prodotti scontati, limiti e date: il codice che la cliente scrive nel carrello.',
+    parole: ['sconto', 'sconti', 'codice', 'coupon', 'promozione', 'promo', 'offerta', 'saldi', 'percentuale', 'barrato', 'black friday', 'natale', 'riduzione'],
+    pagina: 'compiti/creare-codice-sconto.html', minuti: 5 },
+  { id: 'gift-card', area: 'prodotti', titolo: 'Gift card: tagli e buoni regalo',
+    descrizione: 'I tagli da 50 e 100 €, un taglio nuovo, un buono regalato a mano.',
+    parole: ['gift', 'card', 'buono', 'buoni', 'regalo', 'carta', 'taglio', 'tagli', 'voucher', 'omaggio'],
+    pagina: 'compiti/gift-card.html', minuti: 3 },
   // Campi e voci
   { id: 'aggiungere-recensione', area: 'campi', titolo: 'Aggiungere, togliere o correggere una recensione',
     descrizione: 'Una recensione nuova, toglierne una, correggere il testo.',
@@ -85,11 +102,48 @@ window.GLODE_COMPITI = [
     descrizione: 'I centri della pagina «Dove trovi Glodé».',
     parole: ['centro', 'centri', 'estetico', 'estetista', 'negozio', 'rivenditore', 'partner', 'indirizzo', 'telefono', 'provincia', 'cap', 'mappa', 'dove', 'trovi'],
     pagina: 'compiti/centri.html', minuti: 3 },
+  // Menu, testi e negozio
+  { id: 'cambiare-menu', area: 'sito', titolo: 'Cambiare il menu in alto',
+    descrizione: 'Rinominare, aggiungere, ordinare o togliere le voci del menu e delle tendine.',
+    parole: ['menu', 'voce', 'voci', 'tendina', 'navigazione', 'barra', 'link', 'sotto-voce', 'sottovoce', 'esigenze', 'ordine', 'rinominare', 'main'],
+    pagina: 'compiti/cambiare-menu.html', minuti: 5 },
+  { id: 'cambiare-link-piede', area: 'sito', titolo: 'Cambiare i link del piede pagina',
+    descrizione: 'Le colonne «Prodotti» e «Assistenza» in fondo a ogni pagina.',
+    parole: ['piede', 'footer', 'fondo', 'pagina', 'link', 'assistenza', 'colonna', 'menu', 'voci'],
+    pagina: 'compiti/cambiare-link-piede.html', minuti: 3 },
+  { id: 'cambiare-barra-in-alto', area: 'sito', titolo: 'Cambiare la barra in alto',
+    descrizione: 'La riga blu sopra il menu: «Spedizione gratuita da 69 €…» e il suo link.',
+    parole: ['barra', 'annuncio', 'avviso', 'banner', 'spedizione', 'gratuita', 'blu', 'riga', 'messaggio', 'promozione', 'tema', 'modifica tema'],
+    pagina: 'compiti/cambiare-barra-in-alto.html', minuti: 3 },
+  { id: 'cambiare-testi-piede', area: 'sito', titolo: 'Cambiare i testi del piede pagina',
+    descrizione: 'Lo slogan in fondo alle pagine e i titoli delle colonne di link.',
+    parole: ['piede', 'footer', 'fondo', 'slogan', 'recode', 'titolo', 'colonna', 'intestazione', 'testo', 'tema', 'modifica tema'],
+    pagina: 'compiti/cambiare-testi-piede.html', minuti: 3 },
+  { id: 'cambiare-informative', area: 'sito', titolo: 'Cambiare le informative (privacy, resi, spedizioni, termini)',
+    descrizione: 'I testi legali di Shopify, in fondo al sito e al check-out.',
+    parole: ['informativa', 'informative', 'privacy', 'termini', 'condizioni', 'resi', 'rimborsi', 'recesso', 'spedizioni', 'legale', 'policy', 'gdpr', 'checkout'],
+    pagina: 'compiti/cambiare-informative.html', minuti: 5 },
+  { id: 'testi-per-google', area: 'sito', titolo: 'Testi per Google: home, pagine, collezioni, prodotti',
+    descrizione: 'Titolo e descrizione nei risultati di Google, e l’immagine per i social.',
+    parole: ['google', 'seo', 'motori', 'ricerca', 'titolo', 'descrizione', 'meta', 'home', 'pagina', 'pagine', 'collezione', 'social', 'condivisione', 'anteprima'],
+    pagina: 'compiti/testi-per-google.html', minuti: 3 },
+  { id: 'reindirizzare-indirizzo', area: 'sito', titolo: 'Reindirizzare un vecchio indirizzo',
+    descrizione: 'Quando un prodotto è tolto: il vecchio link porta a una pagina che esiste.',
+    parole: ['reindirizzare', 'reindirizzamento', 'redirect', 'indirizzo', 'url', 'link', 'vecchio', 'errore', '404', 'non trovata', 'archiviato'],
+    pagina: 'compiti/reindirizzare-indirizzo.html', minuti: 3 },
+  { id: 'iscritti-newsletter', area: 'sito', titolo: 'Vedere chi si è iscritto alla newsletter',
+    descrizione: 'Le clienti iscritte alle email e l’elenco in un file.',
+    parole: ['newsletter', 'iscritti', 'iscritto', 'iscrizione', 'email', 'mail', 'clienti', 'cliente', 'contatti', 'marketing', 'esportare', 'elenco'],
+    pagina: 'compiti/iscritti-newsletter.html', minuti: 1 },
   // Attenzione e aiuto
   { id: 'cosa-non-toccare', area: 'aiuto', titolo: 'Cosa non toccare',
     descrizione: 'Le parti del pannello che possono rompere il sito.',
-    parole: ['attenzione', 'pericolo', 'tema', 'temi', 'personalizza', 'definizione', 'cancella', 'navigazione', 'menu', 'app', 'flow', 'pin'],
+    parole: ['attenzione', 'pericolo', 'tema', 'temi', 'personalizza', 'definizione', 'cancella', 'navigazione', 'menu', 'app', 'flow', 'pin', 'password', 'privata', 'modifica tema', 'editor', 'pubblica'],
     pagina: 'compiti/cosa-non-toccare.html', minuti: 3 },
+  { id: 'fisso-nel-codice', area: 'aiuto', titolo: 'Cosa è fisso nel codice',
+    descrizione: 'Le parti del sito che non si cambiano dal pannello: per quelle, scriveteci.',
+    parole: ['fisso', 'codice', 'tema', 'testo', 'testi', 'home', 'chi siamo', 'metodo', 'faq', 'cambiare', 'non si cambia', 'inglese', 'kit', 'logo', '69'],
+    pagina: 'compiti/fisso-nel-codice.html', minuti: 3 },
   { id: 'segnalare-problema', area: 'aiuto', titolo: 'Guardare il sito e segnalare un problema',
     descrizione: 'Cosa scriverci perché lo sistemiamo in fretta.',
     parole: ['problema', 'errore', 'bug', 'segnalare', 'segnalazione', 'non funziona', 'rotto', 'anteprima', 'guardare', 'controllare', 'scrivere'],

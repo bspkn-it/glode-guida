@@ -10,6 +10,20 @@ window.GLODE_DA_DOVE = [
   "h": 4353,
   "punti": [
    {
+    "x": 22,
+    "y": 1.1,
+    "t": "Barra in alto",
+    "d": "«Modifica tema» → «Glodé annuncio»",
+    "c": "cambiare-barra-in-alto"
+   },
+   {
+    "x": 4.5,
+    "y": 2.6,
+    "t": "Voci del menu",
+    "d": "«Contenuto» → «Menu» → «Main menu»",
+    "c": "cambiare-menu"
+   },
+   {
     "x": 28.0,
     "y": 4.4,
     "t": "Fascia in alto",
@@ -125,6 +139,20 @@ window.GLODE_DA_DOVE = [
   "h": 5052,
   "punti": [
    {
+    "x": 22,
+    "y": 1.0,
+    "t": "Barra in alto",
+    "d": "«Modifica tema» → «Glodé annuncio»",
+    "c": "cambiare-barra-in-alto"
+   },
+   {
+    "x": 4.5,
+    "y": 2.3,
+    "t": "Voci del menu",
+    "d": "«Contenuto» → «Menu» → «Main menu»",
+    "c": "cambiare-menu"
+   },
+   {
     "x": 24,
     "y": 15.5,
     "t": "Titolo «I più amati»",
@@ -208,8 +236,8 @@ window.GLODE_DA_DOVE = [
     "x": 45,
     "y": 24,
     "t": "Schede Detergenti… Maschere",
-    "d": "le famiglie, dal campo «Tipo»",
-    "c": "collezioni"
+    "d": "sotto-voci di «Prodotti» nel menu, scritte come il «Tipo»",
+    "c": "cambiare-menu"
    },
    {
     "x": 25,
@@ -235,9 +263,9 @@ window.GLODE_DA_DOVE = [
    {
     "x": 18,
     "y": 20,
-    "t": "Voce «Esigenze»",
-    "d": "campo «Esigenze» dei prodotti",
-    "c": "esigenze-tipi-pelle"
+    "t": "Voci Prodotti, Esigenze…",
+    "d": "il menu «Main menu»; dentro «Esigenze», il campo «Esigenze» dei prodotti",
+    "c": "cambiare-menu"
    }
   ]
  },

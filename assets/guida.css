@@ -56,16 +56,17 @@ a{color:var(--prugna)}a:hover{color:var(--prugna-scuro)}
 .piu-cercati a{color:#fff}
 
 /* home: i quattro riquadri (variante B) */
-.aree{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;padding-top:40px;padding-bottom:16px}
+.aree{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;padding-top:40px;padding-bottom:16px}
 .tessera{display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:200px;padding:26px;border-radius:20px;text-decoration:none}
 @media (min-width:700px){.tessera{min-height:250px}}
 .tessera svg{width:40px;height:40px;fill:none;stroke:currentColor;stroke-width:1.6}
-.tessera b{display:block;font-size:24px;line-height:1.2;margin-bottom:6px}
+.tessera b{display:block;font-size:22px;line-height:1.2;margin-bottom:6px}
 .tessera span{font-size:15px}
 .tessera.navy{background:var(--navy);color:#fff}.tessera.navy span{color:var(--nebbia)}
 .tessera.prugna{background:var(--prugna);color:#fff}.tessera.prugna span{color:var(--lavanda)}
 .tessera.lavanda{background:var(--lavanda);color:var(--navy)}.tessera.lavanda span{color:var(--prugna-scuro)}
 .tessera.perla{background:var(--perla);color:var(--navy)}.tessera.perla span{color:var(--grigio)}
+.tessera.bianco{background:#fff;color:var(--navy);border:2px solid var(--prugna)}.tessera.bianco span{color:var(--prugna-scuro)}
 .tessera:hover{filter:brightness(1.06)}
 
 .colonna-area{display:flex;flex-direction:column;gap:20px;min-width:0;scroll-margin-top:16px}
@@ -131,6 +132,8 @@ summary{font-weight:700;color:var(--prugna);cursor:pointer}
 details p{margin:10px 0 0}
 .sul-sito{background:var(--lavanda);border-radius:14px;padding:20px 24px;display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:24px;align-items:center}
 .sul-sito .scatto{background:#fff}
+.sul-sito.solo-testo{grid-template-columns:minmax(0,1fr)}
+.sul-sito p+p{margin-top:8px}
 .sul-sito h2{margin:0 0 6px;font-size:12px;font-weight:800;letter-spacing:2px;color:var(--prugna);text-transform:uppercase}
 .sul-sito p{margin:0}
 
