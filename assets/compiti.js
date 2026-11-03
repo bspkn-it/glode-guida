@@ -71,7 +71,7 @@ window.GLODE_COMPITI = [
     pagina: 'compiti/aggiungere-recensione.html', minuti: 2 },
   { id: 'aggiungere-attivo', area: 'campi', titolo: 'Aggiungere, togliere o correggere un attivo',
     descrizione: 'Un attivo nuovo, toglierne uno, correggere il testo.',
-    parole: ['attivo', 'attivi', 'ingrediente', 'ingredienti', 'principio', 'nome', 'testo', 'voce', 'chiave', 'ordine', 'correggere'],
+    parole: ['attivo', 'attivi', 'doppi', 'doppio', 'ripetuti', 'cofanetto', 'cofanetti', 'kit', 'ingrediente', 'ingredienti', 'principio', 'nome', 'testo', 'voce', 'chiave', 'ordine', 'correggere'],
     pagina: 'compiti/aggiungere-attivo.html', minuti: 3 },
   { id: 'scrivere-tips', area: 'campi', titolo: 'Scrivere i Glodé Tips',
     descrizione: 'Il consiglio nella tendina «Glodé Tips» della scheda.',
